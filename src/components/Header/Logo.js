@@ -1,15 +1,20 @@
 import React from "react";
 
-const Logo = () => {
+const Logo = ({ imageUrl }) => {
   return (
-    <h1 style={styles.logo}>Logo</h1>
-  )
+    <img
+      src={imageUrl}
+      alt="Logo"
+      style={styles.logo}
+    />
+  );
 };
-
-export default Logo;
 
 const styles = {
   logo: {
-    color: 'white',
+    maxWidth: 64, 
+    maxHeight: 64, 
   }
-}
+};
+
+export default Logo;

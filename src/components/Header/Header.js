@@ -6,11 +6,11 @@ import Navigation from "./Navigation";
 import { PIXELS } from "../../utils/styles/dimensions";
 
 
-const Header = () => {
+const Header = ({ lg }) => {
   return (
    <header style={styles.content} >
       <div style={styles.logoWrap} >
-        <Logo />
+        <Logo imageUrl={lg?.assetPath} />
       </div>
       <div style={styles.navWrap} >
         <Navigation />

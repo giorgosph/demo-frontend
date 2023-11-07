@@ -1,20 +1,13 @@
 import React, { useState } from "react";
 
-const Carousel = () => {
+const Carousel = ({ crl }) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  const images = [
-    'image1.jpg',
-    'image2.jpg',
-    'image3.jpg',
-  ];
+  const images = crl?.assetPath.split('*') || [];
 
-  const prevImage = () => {
-    setCurrentImageIndex((prevIndex) => (prevIndex === 0 ? images.length - 1 : prevIndex - 1));
-  };
+  const prevImage = () => setCurrentImageIndex((prevIndex) => (prevIndex === 0 ? images.length - 1 : prevIndex - 1));
 
-  const nextImage = () => {
-    setCurrentImageIndex((prevIndex) => (prevIndex === images.length - 1 ? 0 : prevIndex + 1));
-  };
+  const nextImage = () => setCurrentImageIndex((prevIndex) => (prevIndex === images.length - 1 ? 0 : prevIndex + 1));
+
 
   return (
     <div style={styles.carouselStyle}>
