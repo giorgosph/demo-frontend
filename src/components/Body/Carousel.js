@@ -10,7 +10,7 @@ const Carousel = ({ crl }) => {
 
 
   return (
-    <div style={styles.carouselStyle}>
+    <section id="carousel" style={styles.carouselStyle}>
       <button style={styles.buttonStyle} onClick={prevImage}>
         Previous
       </button>
@@ -22,7 +22,7 @@ const Carousel = ({ crl }) => {
       <button style={styles.buttonStyle} onClick={nextImage}>
         Next
       </button>
-    </div>
+    </section>
   );
 };
 

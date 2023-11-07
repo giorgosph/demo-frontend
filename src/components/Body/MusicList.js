@@ -14,14 +14,14 @@ const MusicList = () => {
   };
 
   return (
-    <div style={styles.content}>
+    <section id="video" style={styles.content}>
       <div>
         <YouTube videoId={video1Id} opts={opts} />
       </div>
       <div>
         <YouTube videoId={video2Id} opts={opts} />
       </div>
-    </div>
+    </section>
   );
 };
 

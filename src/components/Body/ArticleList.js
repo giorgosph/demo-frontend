@@ -4,7 +4,7 @@ import ArticleListing from "./ArticleListing";
 
 const ArticleList = () => {
   return (
-    <div style={styles.content}>
+    <section id="article" style={styles.content}>
       <ArticleListing
         title="Getting Started with React"
         subtitle="A beginner's guide"
@@ -20,7 +20,7 @@ const ArticleList = () => {
         subtitle="Server-side JavaScript"
         summary="Explore the fundamentals of Node.js, a runtime for executing JavaScript on the server side."
       />
-    </div>
+    </section>
   );
 };
 
